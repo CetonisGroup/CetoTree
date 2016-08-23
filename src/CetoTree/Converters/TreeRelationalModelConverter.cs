@@ -4,9 +4,9 @@ using System.Linq;
 
 namespace CetoTree
 {
-    public class TreeRelationalModelConverter<T>
+    public class TreeRelationalModelConverter
     {
-        public Tuple<RelationalTree, List<RelationalTreeNode<T>>, List<T>> ConvertToRelationalModel(Tree<T> tree)
+        public Tuple<RelationalTree, List<RelationalTreeNode<T>>, List<T>> ConvertToRelationalModel<T>(Tree<T> tree)
         {
             var stack = new Stack<Tuple<RelationalTreeNode<T>, TreeNode<T>>>();
 
@@ -52,7 +52,7 @@ namespace CetoTree
 
 
         
-        public Tree<T> ConvertFromRelationalModel(RelationalTree relationalTree, List<RelationalTreeNode<T>> relationalNodes)
+        public Tree<T> ConvertFromRelationalModel<T>(RelationalTree relationalTree, List<RelationalTreeNode<T>> relationalNodes)
         {
             var associatedNodes = relationalNodes
                 .Select(x => Tuple.Create(x, new TreeNode<T>(x.Data, x.Id)))

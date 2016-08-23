@@ -14,5 +14,10 @@ namespace CetoTree.UnitTests.TestDataClasses
             var secondContent = (TestContent)obj;
             return Content == secondContent.Content;
         }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
     }
 }

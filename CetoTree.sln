@@ -12,7 +12,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "CetoTree", "src\CetoTree\CetoTree.xproj", "{86B98BE7-C656-4956-8492-7EEC3F4EA286}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Samples", "src\Samples\Samples.xproj", "{3FAC18E9-0941-4287-A914-E2BB4B413670}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Sample", "src\Samples\Sample.xproj", "{3FAC18E9-0941-4287-A914-E2BB4B413670}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{E5211772-E831-49D8-BA88-687E65D009B9}"
 EndProject

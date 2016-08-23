@@ -35,20 +35,20 @@ namespace CetoTree.UnitTests.Tests
             {
                 Tuple.Create(0, 25),
                 Tuple.Create(1,8),
-                Tuple.Create( 2,3),
-                Tuple.Create( 4,5),
-                Tuple.Create( 6,7),
-                Tuple.Create( 9, 16),
-                Tuple.Create( 10,11),
-                Tuple.Create( 12,13),
-                Tuple.Create( 14,15),
-                Tuple.Create( 17,24),
-                Tuple.Create( 18,19),
-                Tuple.Create( 20,21),
-                Tuple.Create( 22,23)
+                Tuple.Create(2,3),
+                Tuple.Create(4,5),
+                Tuple.Create(6,7),
+                Tuple.Create(9, 16),
+                Tuple.Create(10,11),
+                Tuple.Create(12,13),
+                Tuple.Create(14,15),
+                Tuple.Create(17,24),
+                Tuple.Create(18,19),
+                Tuple.Create(20,21),
+                Tuple.Create(22,23)
             };
 
-            var converter = new TreeRelationalModelConverter<TestContent>();
+            var converter = new TreeRelationalModelConverter();
             var res = converter.ConvertToRelationalModel(tree);
 
             Assert.NotNull(res.Item1);
@@ -70,23 +70,23 @@ namespace CetoTree.UnitTests.Tests
         [Fact]
         public void RelationalToTreeCorrectTest()
         {
-            var converter = new TreeRelationalModelConverter<TestContent>();
+            var converter = new TreeRelationalModelConverter();
 
             var nodes = new List<RelationalTreeNode<TestContent>>()
             {
                 new RelationalTreeNode<TestContent>() {PreOrderId =  0,PostOrderId=25, Data = new TestContent() {Content="Root" } },
                 new RelationalTreeNode<TestContent>() {PreOrderId =  1,PostOrderId=8, Data = new TestContent() {Content="Hello" } },
-                  new RelationalTreeNode<TestContent>() {PreOrderId =  2,PostOrderId=3, Data = new TestContent() {Content="<0 0>" } },
-                   new RelationalTreeNode<TestContent>() {PreOrderId =  4,PostOrderId=5, Data = new TestContent() {Content="<0 1>" } },
-                    new RelationalTreeNode<TestContent>() {PreOrderId =  6,PostOrderId=7, Data = new TestContent() {Content="<0 2>" } },
-                     new RelationalTreeNode<TestContent>() {PreOrderId =  9,PostOrderId=16, Data = new TestContent() {Content="Tree" } },
-                      new RelationalTreeNode<TestContent>() {PreOrderId =  10,PostOrderId=11, Data = new TestContent() {Content="<1 0>" } },
-                       new RelationalTreeNode<TestContent>() {PreOrderId =  12,PostOrderId=13, Data = new TestContent() {Content="<1 1>" } },
-                        new RelationalTreeNode<TestContent>() {PreOrderId =  14,PostOrderId=15, Data = new TestContent() {Content="<1 2>" } },
-                         new RelationalTreeNode<TestContent>() {PreOrderId =  17,PostOrderId=24, Data = new TestContent() {Content="Mapper" } },
-                          new RelationalTreeNode<TestContent>() {PreOrderId =  18,PostOrderId=19, Data = new TestContent() {Content="<2 0>" } },
-                           new RelationalTreeNode<TestContent>() {PreOrderId =  20,PostOrderId=21, Data = new TestContent() {Content="<2 1>" } },
-                            new RelationalTreeNode<TestContent>() {PreOrderId =  22,PostOrderId=23, Data = new TestContent() {Content="<2 2>" } }
+                new RelationalTreeNode<TestContent>() {PreOrderId =  2,PostOrderId=3, Data = new TestContent() {Content="<0 0>" } },
+                new RelationalTreeNode<TestContent>() {PreOrderId =  4,PostOrderId=5, Data = new TestContent() {Content="<0 1>" } },
+                new RelationalTreeNode<TestContent>() {PreOrderId =  6,PostOrderId=7, Data = new TestContent() {Content="<0 2>" } },
+                new RelationalTreeNode<TestContent>() {PreOrderId =  9,PostOrderId=16, Data = new TestContent() {Content="Tree" } },
+                new RelationalTreeNode<TestContent>() {PreOrderId =  10,PostOrderId=11, Data = new TestContent() {Content="<1 0>" } },
+                new RelationalTreeNode<TestContent>() {PreOrderId =  12,PostOrderId=13, Data = new TestContent() {Content="<1 1>" } },
+                new RelationalTreeNode<TestContent>() {PreOrderId =  14,PostOrderId=15, Data = new TestContent() {Content="<1 2>" } },
+                new RelationalTreeNode<TestContent>() {PreOrderId =  17,PostOrderId=24, Data = new TestContent() {Content="Mapper" } },
+                new RelationalTreeNode<TestContent>() {PreOrderId =  18,PostOrderId=19, Data = new TestContent() {Content="<2 0>" } },
+                new RelationalTreeNode<TestContent>() {PreOrderId =  20,PostOrderId=21, Data = new TestContent() {Content="<2 1>" } },
+                new RelationalTreeNode<TestContent>() {PreOrderId =  22,PostOrderId=23, Data = new TestContent() {Content="<2 2>" } }
             };
 
             RelationalTree t = new RelationalTree();
