@@ -13,7 +13,7 @@
       "version": "1.0.0"
     },
     "CetoTree.UnitTests": "1.0.0-*",
-    "CetoTree": "1.0.0-*"
+    "CetoTree": "0.0.1-*"
   },
 
   "tools": {

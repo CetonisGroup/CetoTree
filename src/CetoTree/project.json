@@ -1,5 +1,9 @@
-﻿{
-  "version": "1.0.0-*",
+{
+  "title": "CetoTree",
+  "copyright": "Simon Rühle, Cetonis AG",
+  "description": "A simple, lightweight and portable library providing an easy way to store trees to databases that do not support storing trees natively.",
+  "language": "en",
+  "version": "0.0.1-*",
 
   "dependencies": {
     "NETStandard.Library": "1.6.0"
