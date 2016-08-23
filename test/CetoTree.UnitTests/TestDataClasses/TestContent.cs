@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CetoTree.UnitTests.DataClasses
+namespace CetoTree.UnitTests.TestDataClasses
 {
     public class TestContent
     {

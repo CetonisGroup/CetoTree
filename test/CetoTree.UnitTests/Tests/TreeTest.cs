@@ -1,10 +1,11 @@
-﻿using System;
+﻿using CetoTree.UnitTests.TestUtil;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace CetoTree.UnitTests
+namespace CetoTree.UnitTests.Tests
 {
     public class TreeTest
     {

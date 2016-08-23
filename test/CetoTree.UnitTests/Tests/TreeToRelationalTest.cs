@@ -1,11 +1,11 @@
-﻿using CetoTree.UnitTests.DataClasses;
+﻿using CetoTree.UnitTests.TestDataClasses;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace CetoTree.UnitTests
+namespace CetoTree.UnitTests.Tests
 {
     public class TreeToRelationalTest
     {
