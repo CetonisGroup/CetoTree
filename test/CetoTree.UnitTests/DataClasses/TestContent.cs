@@ -8,5 +8,11 @@ namespace CetoTree.UnitTests.DataClasses
     public class TestContent
     {
         public string Content { get; set; }
+
+        public override bool Equals(object obj)
+        {
+            var secondContent = (TestContent)obj;
+            return Content == secondContent.Content;
+        }
     }
 }
