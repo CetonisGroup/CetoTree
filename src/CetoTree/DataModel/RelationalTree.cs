@@ -5,10 +5,8 @@ using System.Threading.Tasks;
 
 namespace CetoTree
 {
-    public class Class1
+    public class RelationalTree
     {
-        public Class1()
-        {
-        }
+        public int Id { get; set; }
     }
 }

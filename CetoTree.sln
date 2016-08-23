@@ -12,6 +12,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "CetoTree", "src\CetoTree\CetoTree.xproj", "{86B98BE7-C656-4956-8492-7EEC3F4EA286}"
 EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Samples", "src\Samples\Samples.xproj", "{3FAC18E9-0941-4287-A914-E2BB4B413670}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{E5211772-E831-49D8-BA88-687E65D009B9}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "CetoTree.UnitTests", "test\CetoTree.UnitTests\CetoTree.UnitTests.xproj", "{633C00C6-DA71-4BB9-94DD-21D4011FDA5F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,11 +28,21 @@ Global
 		{86B98BE7-C656-4956-8492-7EEC3F4EA286}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86B98BE7-C656-4956-8492-7EEC3F4EA286}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86B98BE7-C656-4956-8492-7EEC3F4EA286}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FAC18E9-0941-4287-A914-E2BB4B413670}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FAC18E9-0941-4287-A914-E2BB4B413670}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FAC18E9-0941-4287-A914-E2BB4B413670}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FAC18E9-0941-4287-A914-E2BB4B413670}.Release|Any CPU.Build.0 = Release|Any CPU
+		{633C00C6-DA71-4BB9-94DD-21D4011FDA5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{633C00C6-DA71-4BB9-94DD-21D4011FDA5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{633C00C6-DA71-4BB9-94DD-21D4011FDA5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{633C00C6-DA71-4BB9-94DD-21D4011FDA5F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{86B98BE7-C656-4956-8492-7EEC3F4EA286} = {0168B36F-9C4A-4105-9C5B-28C93D8360C5}
+		{3FAC18E9-0941-4287-A914-E2BB4B413670} = {0168B36F-9C4A-4105-9C5B-28C93D8360C5}
+		{633C00C6-DA71-4BB9-94DD-21D4011FDA5F} = {E5211772-E831-49D8-BA88-687E65D009B9}
 	EndGlobalSection
 EndGlobal
