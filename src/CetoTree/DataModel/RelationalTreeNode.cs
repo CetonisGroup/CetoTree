@@ -1,5 +1,13 @@
 ﻿namespace CetoTree
 {
+    /// <summary>
+    /// Class for representing a tree node in a relational database.
+    /// This class can be stored in a single table and 
+    /// the corresponding tree can be reconstructructed uniquely 
+    /// at runtime from this data.
+    /// </summary>
+    /// <typeparam name="T">The content type the tree node stores.
+    /// The content is linked via a relation in the database</typeparam>
     public class RelationalTreeNode<T>
     {
         public RelationalTreeNode() { }

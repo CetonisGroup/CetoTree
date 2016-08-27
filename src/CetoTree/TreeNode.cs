@@ -2,6 +2,12 @@
 
 namespace CetoTree
 {
+    /// <summary>
+    /// Class representing a node of a tree.
+    /// The class contains links to parent and child nodes of this node.
+    /// </summary>
+    /// <typeparam name="T">The content type (payload) of the node, for the data
+    /// to be represented by the tree</typeparam>
     public class TreeNode<T>
     {
         public virtual int Id { get; set; }

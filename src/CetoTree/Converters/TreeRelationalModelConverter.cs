@@ -4,8 +4,20 @@ using System.Linq;
 
 namespace CetoTree
 {
+    /// <summary>
+    /// Class for converting an in-memory tree to a relational model for 
+    /// storing in a relation database (e.g. SQL database) and converting this
+    /// back to an in-memory tree.
+    /// </summary>
     public class TreeRelationalModelConverter
     {
+        /// <summary>
+        /// Converts the given tree to a relational representation suitable
+        /// for storage in a database.
+        /// </summary>
+        /// <typeparam name="T">The type of the content of the tree</typeparam>
+        /// <param name="tree">The tree to be converted</param>
+        /// <returns>Tuple, 1. The relational tree, 2. a list of relational representation of nodes and 3. the content of the nodes.</returns>
         public Tuple<RelationalTree, List<RelationalTreeNode<T>>, List<T>> ConvertToRelationalModel<T>(Tree<T> tree)
         {
             var stack = new Stack<Tuple<RelationalTreeNode<T>, TreeNode<T>>>();
@@ -51,7 +63,14 @@ namespace CetoTree
         }
 
 
-        
+        /// <summary>
+        /// Converts a relational tree to a in-memory tree structure.
+        /// </summary>
+        /// <typeparam name="T">The type of the content of the tree</typeparam>
+        /// <param name="relationalTree">The relational tree object</param>
+        /// <param name="relationalNodes">The nodes of the tree from a database. Attention the content
+        /// of the nodes has to be set externally. This cannot be done in this method because of missing database access.</param>
+        /// <returns>The in-memory tree</returns>
         public Tree<T> ConvertFromRelationalModel<T>(RelationalTree relationalTree, List<RelationalTreeNode<T>> relationalNodes)
         {
             var associatedNodes = relationalNodes

@@ -2,6 +2,10 @@
 
 namespace CetoTree
 {
+    /// <summary>
+    /// Class that is able to represent a typed tree.
+    /// </summary>
+    /// <typeparam name="T">The type of content each node of the tree will have</typeparam>
     public class Tree<T>
     {
         public virtual int Id { get; set; }
