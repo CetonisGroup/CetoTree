@@ -50,7 +50,7 @@ namespace CetoTree
 
         public override int GetHashCode()
         {
-            return base.GetHashCode();
+            return Id ^ 0xF6CC4DD;
         }
     }
 }
